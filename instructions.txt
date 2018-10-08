@@ -1,0 +1,14 @@
+functions.php (Needs to be created)
+- Create a PHP function named searchBooks which:
+	- Takes a search term as a parameter
+	- Based upon the term provided, query from the database books starting with the term by using the LIKE keyword
+	- Return an associative array with book data from the database
+
+searchBooks.sql (Needs to be created)
+- Write an SQL statement to search books based based on the search term
+
+index.php
+- Include the functions.php file after loading the config.php file
+- Set a variable equal to the search term passed or an empty string if there isn't a search term
+- Call the searchBooks function passing the search term to the function and set the results to a variable called $books
+- Loop over the results of $books and print the title and price.
